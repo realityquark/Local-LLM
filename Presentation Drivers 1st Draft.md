@@ -19,31 +19,31 @@ Make sure your drivers are on the latest version by visiting https://www.nvidia.
 
 Now lets check out https://www.nvidia.com/download/index.aspx  Select the correct Product Type and Series, if you are working on a laptop make sure you choose the notebook version. 
 
-![Laptop Info](laptopinfo.png)
+![Laptop Info](images/laptopinfo.png)
 
 Under Product you will find your specific GPU. Most GPU will have 2 different types you can download. Game Ready Driver (GRD) or Studio Driver (SD). GRD is like the name says better suited for gaming but will run AI no problem, So if do more gaming and want to play with AI you can go this route. If you are going to be doing mostly AI or productivity work, SD is the better choice. I do a little bit of gaming, but my main focus in my lab is cyber/AI research and the SD driver still play games no issues. Both drivers will work, so just chose the best that works for your specific case. 
 
-![Download Type](downloadtype.png)
+![Download Type](images/downloadtype.png)
 
 Next choose Windows 10 or 11 and then language. Click on Search and now you can verify if you need to update or good to go! You can see the version listed on the website will match the last set of digits we looked at under Device Manager.
 
-![Driver Version](driverversion.png)
+![Driver Version](images/driverversion.png)
 
 Double click on the Driver file that was just downloaded and the first screen that pops up will ask where you want to save the drivers, just leave in default location.
 
-![Nvidia1](nvidia1.png)
+![Nvidia1](images/nvidia1.png)
 
 After doing a system check it will ask you if you agree with the license agreement...
 
-![Nvidia2](nvidia2.png)
+![Nvidia2](images/nvidia2.png)
 
 Next we get to choose between Express and Custom. If you were having issues with your drivers previously you can click on custom and there you will see an option to perform a clean installation. Either option will work.
 
-![Nvidia3](nvidia3.png)
+![Nvidia3](images/nvidia3.png)
 
 If you are just wanting to work with AI, I recommend to uncheck the NVIDIA GEForce Experience. It is not needed for what we are trying to work on here. 
 
-![Nvidia4](nvidia4.png)
+![Nvidia4](images/nvidia4.png)
 
 After clicking next here it will start to install the drivers. You might see some flickering on you monitor, this is normal. I recommend restarting your computer after the install has completed. You can also verify the drivers were installed by repeating the steps from earlier by checking in device manager to see if the version display matches the version you just installed.
 
@@ -75,11 +75,11 @@ While its doing its update we can check on a few things. press the ```Windows ke
 
 Here we can see by searching nvidia's website, we are looking for version 550
 
-![Linux Website Version](linuxwebsiteversion.png)
+![Linux Website Version](images/linuxwebsiteversion.png)
 
 But under Addition Drivers 545 is the latest listed.  
 
-![Software Update](softwareupdate.png)
+![Software Update](images/softwareupdate.png)
 
 
 Lets add the ppa graphics repository to our apt source so we can get the latest drivers installed
@@ -96,14 +96,14 @@ sudo apt install nvidia-driver-550
 
 We have 2 methods to verify if everything is working ok. First is to go into settings and scroll all the way to the bottom and click about. There you will see under Graphics if it shows Nvidia. If it shows anything else, the above procedures did not work, but keep in mind it will not show Nvidia here until you reboot the system.
 
-![About](about.png)
+![About](images/about.png)
 
 Second method is via terminal. If you don't see the following output something is wrong.
 ```bash
 nvidia-smi
 ```
 
-![Smi](smi.png)
+![Smi](images/smi.png)
 
 
 **Note**: This is where I kept running into issues, it would function temporarily, but as soon as I rebooted or installed something else that relied on the drivers, they'd stop working again. Even adding the nvidia-smi command to my PATH environment variable didn't help. In contrast, installing Nvidia drivers via apt package manager takes care of all dependencies and ensures a stable installation from the start.
