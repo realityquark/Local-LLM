@@ -15,7 +15,7 @@ As a researcher, I'm intrigued by the potential of Artificial Intelligence (AI) 
 
 Make sure your drivers are on the latest version by visiting https://www.nvidia.com/download/index.aspx Download directly from Nvidia website for your specific GPU. You can check which version you are running currently by clicking ```<windows key> + <x>```  and select Device Manager. Click on Display adapter and double click on your gpu. Select the Driver tab at the top and you are looking for the last set of digits in driver version. 
 
-![[DeviceManager.png]]
+![Device Manager](images/DeviceManager.png)
 
 Now lets check out https://www.nvidia.com/download/index.aspx  Select the correct Product Type and Series, if you are working on a laptop make sure you choose the notebook version. 
 
