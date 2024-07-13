@@ -90,7 +90,7 @@ sudo add-apt-repository ppa:graphics-drivers/ppa
 sudo apt install nvidia-driver-550
 ```
 
-#### **Reboot**
+### **Reboot**
 
 We have 2 methods to verify if everything is working ok. First is to go into settings and scroll all the way to the bottom and click about. There you will see under Graphics if it shows Nvidia. If it shows anything else, the above procedures did not work, but keep in mind it will not show Nvidia here until you reboot the system.
 
