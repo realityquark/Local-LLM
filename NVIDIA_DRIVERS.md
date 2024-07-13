@@ -9,11 +9,11 @@
 ## Windows
 
 
-Make sure your drivers are on the latest version by visiting https://www.nvidia.com/download/index.aspx Download directly from Nvidia website for your specific GPU. You can check which version you are running currently by clicking ```<windows key> + <x>```  and select Device Manager. Click on Display adapter and double click on your gpu. Select the Driver tab at the top and you are looking for the last set of digits in driver version. 
+You can check which version you are running currently by clicking ```<windows key> + <x>```  and select Device Manager. Click on Display adapter and double click on your gpu. Select the Driver tab at the top and you are looking for the last set of digits in driver version. 
 
 ![Device Manager](images/DeviceManager.png)
 
-Now lets check out https://www.nvidia.com/download/index.aspx  Select the correct Product Type and Series, if you are working on a laptop make sure you choose the notebook version. 
+Make sure your drivers are on the latest version by visiting https://www.nvidia.com/download/index.aspx Select the correct Product Type and Series, and if you are working on a laptop make sure you choose the notebook version. 
 
 ![Laptop Info](images/laptopinfo.png)
 
@@ -21,7 +21,7 @@ Under Product you will find your specific GPU. Most GPU will have 2 different ty
 
 ![Download Type](images/downloadtype.png)
 
-Next choose Windows 10 or 11 and then language. Click on Search and now you can verify if you need to update or good to go! You can see the version listed on the website will match the last set of digits we looked at under Device Manager.
+Next choose Windows 10 or 11 and then language. Click on Search and now you can verify if you need to update or good to go! You can see the version listed on the website will match the last set of digits we looked at under Device Manager. Click Download if you need to update.
 
 ![Driver Version](images/driverversion.png)
 
@@ -37,7 +37,7 @@ Next we get to choose between Express and Custom. If you were having issues with
 
 ![Nvidia3](images/nvidia3.png)
 
-If you are just wanting to work with AI, I recommend to uncheck the NVIDIA GEForce Experience. It is not needed for what we are trying to work on here. 
+If you are just wanting to work with AI, I recommend to uncheck the NVIDIA GEForce Experience. It is not needed for what we are trying to do here. 
 
 ![Nvidia4](images/nvidia4.png)
 
@@ -90,7 +90,7 @@ sudo add-apt-repository ppa:graphics-drivers/ppa
 sudo apt install nvidia-driver-550
 ```
 
-**Reboot**
+#### **Reboot**
 
 We have 2 methods to verify if everything is working ok. First is to go into settings and scroll all the way to the bottom and click about. There you will see under Graphics if it shows Nvidia. If it shows anything else, the above procedures did not work, but keep in mind it will not show Nvidia here until you reboot the system.
 
