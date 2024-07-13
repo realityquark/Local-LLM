@@ -11,35 +11,43 @@
 
 You can check which version you are running currently by clicking ```<windows key> + <x>```  and select Device Manager. Click on Display adapter and double click on your gpu. Select the Driver tab at the top and you are looking for the last set of digits in driver version. 
 
+
 ![Device Manager](images/DeviceManager.png)
 
 Make sure your drivers are on the latest version by visiting https://www.nvidia.com/download/index.aspx Select the correct Product Type and Series, and if you are working on a laptop make sure you choose the notebook version. 
 
 ![Laptop Info](images/laptopinfo.png)
 
+
 Under Product you will find your specific GPU. Most GPU will have 2 different types you can download. Game Ready Driver (GRD) or Studio Driver (SD). GRD is like the name says better suited for gaming but will run AI no problem, So if do more gaming and want to play with AI you can go this route. If you are going to be doing mostly AI or productivity work, SD is the better choice. I do a little bit of gaming, but my main focus in my lab is cyber/AI research and the SD driver still play games no issues. Both drivers will work, so just chose the best that works for your specific case. 
 
 ![Download Type](images/downloadtype.png)
+
 
 Next choose Windows 10 or 11 and then language. Click on Search and now you can verify if you need to update or good to go! You can see the version listed on the website will match the last set of digits we looked at under Device Manager. Click Download if you need to update.
 
 ![Driver Version](images/driverversion.png)
 
+
 Double click on the Driver file that was just downloaded and the first screen that pops up will ask where you want to save the drivers, just leave in default location.
 
 ![Nvidia1](images/nvidia1.png)
+
 
 After doing a system check it will ask you if you agree with the license agreement...
 
 ![Nvidia2](images/nvidia2.png)
 
+
 Next we get to choose between Express and Custom. If you were having issues with your drivers previously you can click on custom and there you will see an option to perform a clean installation. Either option will work.
 
 ![Nvidia3](images/nvidia3.png)
 
+
 If you are just wanting to work with AI, I recommend to uncheck the NVIDIA GEForce Experience. It is not needed for what we are trying to do here. 
 
 ![Nvidia4](images/nvidia4.png)
+
 
 After clicking next here it will start to install the drivers. You might see some flickering on you monitor, this is normal. I recommend restarting your computer after the install has completed. You can also verify the drivers were installed by repeating the steps from earlier by checking in device manager to see if the version display matches the version you just installed.
 
