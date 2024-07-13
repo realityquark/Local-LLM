@@ -52,11 +52,13 @@ After clicking next here it will start to install the drivers. You might see som
 
 ## Linux Bare Metal Overview
 
-**Important** : Do NOT download drivers from Nvidia website for bare metal Linux or WSL2! 
+ **Important Note**: If you're running Linux on bare metal, please do not download NVIDIA drivers from their official website! Instead, follow the steps outlined in this guide to ensure a successful installation.
+
+This section is specifically for Bare Metal Linux users. If you're using WSL2, don't worry - we'll cover that in Part 2 of this series! Just make sure to complete the Windows-specific setup procedures outlined above, as WSL2 will build upon those steps.
 
 Downloading via website will not work and could cause you to lose the GUI for your linux distribution. If you have done this, keep reading to find out how to fix this issue and get you GUI back. A lot of tutorials say to install it this way, even nvidia website, but I have not been able to get it working.  Fear not if your GUI will no longer load, and it just freezes while booting and will not load up to the sign in screen. Press ```<ctrl> + <alt> + <F2>``` , this will load up a virtual terminal or tty for short, which is a separate session from the graphical desktop.  Here we can continue on and load the driver the proper way and should fix the GUI not displaying and freezing upon boot.
 
-To install Nvidia driver on Linux we will use the terminal and install via apt package manager. We are going to go over the installation for both Ubuntu 22.04 Jammy Jellyfish, and Debian 12 Bookworm, cause there is some differences. These are 2 of the most popular distribution to use and work well with local LLM frameworks. Let's first take a look at Ubuntu.
+To install Nvidia driver on Linux we will use the terminal and install via apt package manager. We are going to go over the installation for both Ubuntu 22.04 Jammy Jellyfish, and Debian 12 Bookworm, cause there is some differences. These are a couple of the more popular distribution to use and work well with local LLM frameworks. Let's first take a look at Ubuntu.
 
 ## Ubuntu 22.04 Jammy Jellyfish Driver Install
 
@@ -73,7 +75,7 @@ sudo apt upgrade -y
 
 While its doing its update we can check on a few things. press the ```Windows key``` and type software and updates. Click on the software and updates icon to bring up the window. Click on Addition Drivers and we can see what versions are available. One thing we can use nvidia's website for is to confirm which latest version we should be looking for.
 
-Here we can see by searching nvidia's website, we are looking for version 550
+Here we can see by searching nvidia's website https://www.nvidia.com/download/index.aspx, and choosign Linux OS, we are looking for version 550
 
 ![Linux Website Version](images/linuxwebsiteversion.png)
 
