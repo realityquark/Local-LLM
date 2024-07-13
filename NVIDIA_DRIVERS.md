@@ -104,7 +104,7 @@ We have 2 methods to verify if everything is working ok. First is to go into set
 
 ![About](images/about.png)
 
-Second method is via terminal. If you don't see the following output something is wrong.
+Second method is via terminal. If you don't see a similar output to the image below, something is wrong.
 ```bash
 nvidia-smi
 ```
@@ -195,6 +195,8 @@ Now when we run the following command we will know which one to use
 ```bash
 sudo apt-cache search linux-headers
 ```
+
+You should see a result similar to the following
 
 ```Result
 linux-headers-6.1.0-21-amd64 - Header files for Linux 6.1.0-21-amd64  
