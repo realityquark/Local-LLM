@@ -5,10 +5,6 @@
 
 # Nvidia Drivers
 
- 
-
-As a researcher, I'm intrigued by the potential of Artificial Intelligence (AI) to revolutionize our work and lives. With Large Language Models (LLMs) now available for local deployment, I wanted to explore how I can harness this technology in my own home lab. In this guide, we'll delve into setting up Nvidia drivers on both Windows and Linux platforms, followed by installing CUDA and Container Toolkits. Our goal is to get three popular AI frameworks up and running on your local hardware: Ollama, Open WebUI, and Stable Diffusion. To ensure a solid foundation for our endeavors, let's focus on the often-overlooked but crucial step of properly installing Nvidia drivers. I've encountered many guides that either provide incorrect instructions or omit this critical part, prompting me to create this report. Join me as we uncover the exciting possibilities of AI in our home labs!
-
 
 ## Windows
 
